@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tizzimiah | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fonts-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +13,12 @@
 <header>
     <nav>
         <h2>TIZZIMIAH</h2>
-        <ul>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ≡
+        </div>
+
+        <ul id="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -24,37 +30,69 @@
 <section class="hero">
     <h1>Hi, I'm Tizzimiah</h1>
     <p>Frontend Developer | HTML • CSS • JavaScript</p>
+    <p>I build clean, responsive, and user-friendly websites for small Business and personal brands</p>
+    <a href="#contact" class="cta-button">Hire Me</a>
 </section>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I build responsive and user-friendly websites using HTML, CSS and JavaScript.</p>
+    <p>I'm TIZZIMIAH, a passionate Front-End Developer from Nigeria. <br>
+        I specialize in building responsive websites using HTML, CSS and JavaScript. <br>
+        My goal is to help businesses create strong online presence through clean design and functional websites.
+    </p>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Responsive Design</li>
-        <li>Git/Github</li>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Framework & Tools:</strong> Git/Github, VS code, netlify</li>
+        <li><strong>Other:</strong> Responsive Design, UI/UX basics, Debugging</li>
     </ul>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project-box">
-        <h3>Business Landing Page</h3>
-        <a href="https://technovalanding.netlify.app/">View live</a>
+    <div class="project-card">
+        <img src="" alt="TechNova Landing Page">
+        <h3>TechNova Business Landing Page</h3>
+        <p>
+            A modern and responsive landing page for a digital agency <br>
+            Built using HTML, CSS and JavaScript, featuring a clean design, service section, and contact form.
+        </p>
+        <a href="https://technovalanding.netlify.app/" class="cta-button">View live</a>
+        <a href="https://github.com/TIZZIMIAH/business-landing-page" class="cta-button">Source Code</a>
     </div>
 
 </section>
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: emmanuel16adeleke@gmail.com</p>
+
+    <p>I'm currently available for freelance projects and remote opportunities.</p>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+
+            <h3><i class="fa-solid fa-envelope"></i> Email</h3>
+            <a href="mailto:emmanuel16adeleke@gmail.com">emmanuel16adeleke@gmail.com</a>
+
+        </div>
+
+        <div class="contact-item">
+
+            <h3> <i class="fa-brands fa-github"></i>Github</h3>
+            <a href="mailto:emmanuel16adeleke@gmail.com">emmanuel16adeleke@gmail.com</a>
+            <a href="https://github.com/TIZZIMIAH">github.com/TIZZIMIAH</a>
+
+        </div>
+
+    </div>
+    
+    <a href="mailto:emmanuel16adeleke@gmail.com" class="cta-button">Hire Me</a>
+
 </section>
 
 <footer>
